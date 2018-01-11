@@ -1,0 +1,10 @@
+<?php
+ $username=$email=$mobile=$password="";
+ if($_SERVER["REQUEST_METHOD"]=="POST")
+ {
+   $username=$_POST["username"];
+   $email=$_POST["email"];
+   $mobile=$_POST["mobile"];
+   $password=$_POST["password"];
+ }
+?>

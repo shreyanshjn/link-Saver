@@ -44,6 +44,7 @@
          }
          $sql1="CREATE TABLE $username(
          id INT(7) AUTO_INCREMENT PRIMARY KEY,
+         description VARCHAR(250) NOT NULL,
          link VARCHAR(250) NOT NULL)";
          include 'footer.php';
          if($conn->query($sql1)===TRUE)

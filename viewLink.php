@@ -25,11 +25,13 @@
  {?>   
       <table class="table">
       <tr> <th>Serial no. </th>
+           <th>Description</th>
           <th>Link</th></tr>
       <?php
       while($rows=$result->fetch_assoc())
       { ?>
          <tr> <td><?php echo $rows["id"];?> </td>
+              <td><?php echo $rows["description"];?></td>
          <td><a href="<?php echo $rows["link"]; ?>" class="TableLink" target="_blank"><?php echo $rows["link"]; ?></a> </td></tr>
          <?php
       } 
